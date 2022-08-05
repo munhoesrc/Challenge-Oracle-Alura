@@ -5,12 +5,15 @@
 }
 
 body {
-  background: url(./images/back.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
 }
 
 label {
@@ -18,6 +21,8 @@ label {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 25px;
   line-height: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -32,6 +37,8 @@ label {
   margin: 20px;
   padding: 15px;
   /* border: 1px solid black; */
+  position: relative;
+  z-index: 1;
 
 }
 
@@ -40,6 +47,8 @@ label {
   margin: auto;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .box {
@@ -57,7 +66,7 @@ label {
 .btn {
   border: 0;
   color: white;
-  background-color: rgb(7, 140, 131);
+  background-color: grey;
   padding: 10px;
   border-radius: 5px;
   padding: 10px;
@@ -65,10 +74,12 @@ label {
   font-size: 20px;
   width: 200px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .button-copy {
-  text-align:center;
+  text-align: center;
 }
 
 .text-input {
@@ -78,5 +89,6 @@ label {
   padding: 0.5em;
   width: 100%;
   height: 300px;
-  
+  position: relative;
+  z-index: 1;
 }
