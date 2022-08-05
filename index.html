@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="container">encryption.</h1>
+
+  <main class="main">
+    <section class="form box">
+      <form id="cript" action="">
+        <label for="input-texto">Mensagem:</label>
+        <textarea class="text-input" type="text" name="input-texto" id="input-texto"
+          placeholder="Insira o texto aqui"></textarea>
+        <div class="button-copy">
+          <input class="btn" type="submit" value="Criptografar" id="btn-cripto">
+          <input class="btn" type="submit" value="Descriptografar" id="btn-descripto">
+        </div>
+
+      </form>
+    </section>
+
+    <section class="msg box">
+      <label for="cript2">Mensagem criptografada:</label>
+      <textarea class="text-input" type="text" name="out-texto" id="msg"></textarea>
+      <div class="button-copy">
+        <input class="btn" type="submit" value="Copiar" id="btn-copy">
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
