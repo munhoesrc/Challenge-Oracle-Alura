@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .banner video {
@@ -18,16 +18,36 @@ body {
 
 label {
   color: #ffffff;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 25px;
   line-height: 2;
   position: relative;
   z-index: 1;
 }
 
+.container::after {
+  content: "</>";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 .container {
-  color: grey;
-  font-family: 'Helvetica Neue', sans-serif;
+  color: rgb(109, 109, 109);
+  font-family: 'Roboto Mono', monospace;
   font-size: 150px;
   font-weight: bold;
   letter-spacing: -1px;
@@ -65,8 +85,9 @@ label {
 
 .btn {
   border: 0;
+  font-family: 'Roboto Mono', monospace;
   color: white;
-  background-color: grey;
+  background-color: rgb(109, 109, 109);
   padding: 10px;
   border-radius: 5px;
   padding: 10px;
