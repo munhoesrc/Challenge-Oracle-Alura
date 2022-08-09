@@ -27,12 +27,11 @@ bottonCodificar.addEventListener("click", function (event) {
 
 // Botão copiar
 const bottonCopiar = document.querySelector("#btn-copy");
-bottonCopiar.addEventListener("click", function (event) {
+bottonCopiar.addEventListener("click", function () {
   let texCopia = document.querySelector("#msg");
   navigator.clipboard.writeText(texCopia.value);
   texCopia.value = '';
 })
-//---------------------------------------------------
 
 function codificaTexto(texto) {
   let novoTexto = texto;
