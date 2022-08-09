@@ -1,6 +1,5 @@
-<div align="center">
-<strong>Challenge Oracle Alura<strong>
-</div>
+
+## Challenge Oracle Alura
 
 #### Projeto sprint 01 do Challenge de Iniciante em Programação da Alura + Oracle equipe ONE. Para esse desafio, foi utilizado HTML, CSS e Javascript sem o uso de frameworks.
 
@@ -11,3 +10,6 @@
 <div align="center">
   <img src="./imagens/bloggif.gif">
 </div>
+
+### Visualização do projeto:
+Você pode vizualizar o projeto no link: 
