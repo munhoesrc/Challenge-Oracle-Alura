@@ -6,4 +6,4 @@
 * Curso Online Lógica de programação I e II : Os primeiros programas com Javascript e HTML | Alura
 * Curso Online Git e Github: Controle e compartilhe seu código | Alura
 
-<img src="./imagens/tumb.gif" width="42" height="42">
+<img src="./movie/tumb.mp4">
