@@ -9,5 +9,5 @@
 * Curso Online Git e Github: Controle e compartilhe seu código | Alura
 
 <div align="center">
-  <img src="">
+  <img src="./imagens/tumb00.png">
 </div>
