@@ -25,20 +25,6 @@ bottonCodificar.addEventListener("click", function (event) {
 
 });
 
-// Botão copiar
-document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
-async function clipboardCopy() {
-  let text = document.querySelector("#msg").value;
-  await navigator.clipboard.writeText(text);
-}
-s
-// document.getElementById("btn-copy").addEventListener("click", bottonCopiar);
-// async function bottonCopiar() {
-//   let texCopia = document.querySelector("#msg").value;
-// await navigator.clipboard.writeText(texCopia);
-//   texCopia.value = '';
-// }
-
 function codificaTexto(texto) {
   let novoTexto = texto;
   let tamanho = texto.length
@@ -52,7 +38,12 @@ function includeCode(indice, code, texto) {
   return novo;
 }
 
-
+// Botão copiar
+document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+  let text = document.querySelector("#msg").value;
+  await navigator.clipboard.writeText(text);
+}
 
 // Decodificador
 
