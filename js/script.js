@@ -31,12 +31,12 @@ bottonCodificar.addEventListener("click", function (event) {
 //   let text = document.querySelector("#msg").value;
 //   await navigator.clipboard.writeText(text);
 // }
-const bottonCopiar = document.getElementById("btn-copy");
-bottonCopiar.addEventListener("click", function () {
-  let texCopia = document.querySelector("#msg");
-  navigator.clipboard.writeText(texCopia.value);
+document.getElementById("btn-copy").addEventListener("click", bottonCopiar);
+async function bottonCopiar() {
+  let texCopia = document.querySelector("#msg").value;
+await navigator.clipboard.writeText(texCopia);
   texCopia.value = '';
-})
+}
 
 function codificaTexto(texto) {
   let novoTexto = texto;
