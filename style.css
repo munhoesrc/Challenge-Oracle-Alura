@@ -99,6 +99,11 @@ label {
   z-index: 1;
 }
 
+.btn:hover {
+  box-shadow: 5px 5px lightgray, -5px -5px rgba(211, 211, 211, 0.692);
+  cursor: pointer;
+}
+
 .button-copy {
   text-align: center;
 }
