@@ -26,7 +26,12 @@ bottonCodificar.addEventListener("click", function (event) {
 });
 
 // Botão copiar
-const bottonCopiar = document.querySelector("#btn-copy");
+// document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
+// async function clipboardCopy() {
+//   let text = document.querySelector("#msg").value;
+//   await navigator.clipboard.writeText(text);
+// }
+const bottonCopiar = document.getElementById("btn-copy");
 bottonCopiar.addEventListener("click", function () {
   let texCopia = document.querySelector("#msg");
   navigator.clipboard.writeText(texCopia.value);
