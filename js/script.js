@@ -26,17 +26,17 @@ bottonCodificar.addEventListener("click", function (event) {
 });
 
 // Botão copiar
-// document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
-// async function clipboardCopy() {
-//   let text = document.querySelector("#msg").value;
-//   await navigator.clipboard.writeText(text);
-// }
-document.getElementById("btn-copy").addEventListener("click", bottonCopiar);
-async function bottonCopiar() {
-  let texCopia = document.querySelector("#msg").value;
-await navigator.clipboard.writeText(texCopia);
-  texCopia.value = '';
+document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
+async function clipboardCopy() {
+  let text = document.querySelector("#msg").value;
+  await navigator.clipboard.writeText(text);
 }
+// document.getElementById("btn-copy").addEventListener("click", bottonCopiar);
+// async function bottonCopiar() {
+//   let texCopia = document.querySelector("#msg").value;
+// await navigator.clipboard.writeText(texCopia);
+//   texCopia.value = '';
+// }
 
 function codificaTexto(texto) {
   let novoTexto = texto;
