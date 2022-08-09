@@ -39,11 +39,14 @@ function includeCode(indice, code, texto) {
 }
 
 // Botão copiar
-document.getElementById('btn-copy').addEventListener('click', clipboardCopy);
-async function clipboardCopy() {
-  let text = document.querySelector("#msg").value;
-  await navigator.clipboard.writeText(text);
-}
+document.getElementById('btn-copy').addEventListener('click', function() {
+document.getElementById('msg').select();
+document.execCommand('copy');
+});
+// async function clipboardCopy() {
+//   let text = document.querySelector("#msg").value;
+//   await navigator.clipboard.writeText(text);
+// })
 
 // Decodificador
 
