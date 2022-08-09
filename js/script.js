@@ -31,6 +31,7 @@ async function clipboardCopy() {
   let text = document.querySelector("#msg").value;
   await navigator.clipboard.writeText(text);
 }
+s
 // document.getElementById("btn-copy").addEventListener("click", bottonCopiar);
 // async function bottonCopiar() {
 //   let texCopia = document.querySelector("#msg").value;
